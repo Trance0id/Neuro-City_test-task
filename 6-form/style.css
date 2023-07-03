@@ -1,0 +1,17 @@
+.page-heading {
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__input {
+  width: 50%;
+}
+
+.error {
+  min-height: 40px;
+  color: coral;
+}

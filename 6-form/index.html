@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 class="page-heading">Валидация формы</h1>
+    <form class="form">
+        <input type="text" class="form__input" name="name" placeholder="Имя" required>
+        <span class="error name-error"></span>
+        <input type="text" class="form__input" name="tel" placeholder="Телефон" required>
+        <span class="error tel-error"></span>
+        <input type="password" class="form__input" name="pass" placeholder="Пароль" required>
+        <span class="error pass-error"></span>
+        <input type="password" class="form__input" name="confpass" placeholder="Повторите пароль" required>
+        <span class="error confpass-error"></span>
+        <button type="submit">Отправить форму</button>
+    </form>
+</body>
+
+</html>
