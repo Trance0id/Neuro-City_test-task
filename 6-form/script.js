@@ -76,5 +76,3 @@ const validationConfig = {
 const formValidator = new FormValidator('.form', validationConfig);
 
 formValidator.startValidation();
-
-let aaasssAS1 = 0;

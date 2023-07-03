@@ -1,7 +1,7 @@
 const button = document.querySelector('.button');
 const elements = document.querySelectorAll('.elements__element');
 
-function toggleElementsView(e) {
+function toggleElementsView() {
   elements.forEach(el => el.classList.toggle('hidden'));
 }
 
@@ -11,9 +11,7 @@ function debounce(callback, timeout) {
     if (busy) return;
 
     callback(...args);
-
     busy = true;
-
     setTimeout(() => (busy = false), timeout);
   };
 }
