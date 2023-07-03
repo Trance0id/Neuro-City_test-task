@@ -1,0 +1,115 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    width: 5%;
+    aspect-ratio: 1 / 2;
+    left: 0;
+  }
+  5% {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    left: 0;
+  }
+  95% {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    left: 90%;
+  }
+  100% {
+    left: 95%;
+    width: 5%;
+    aspect-ratio: 1 / 2;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(50%);
+  }
+  to {
+    transform: scale(200%);
+  }
+}
+
+@keyframes fly {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.start-button {
+  margin: 2px auto 7px;
+}
+
+.figures {
+  width: 100%;
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.figures__figure-container {
+  border: 2px solid teal;
+  width: 75%;
+  aspect-ratio: 1/5;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.figures__figure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  background: teal;
+  position: relative;
+}
+
+.figures__figure_type_circle {
+  margin: 0;
+  border-radius: 50%;
+}
+
+.figures__figure_type_circle.animated {
+  animation: bounce 1.5s linear 0s infinite alternate;
+}
+
+.figures__figure_type_triangle {
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%, 0 100%);
+}
+
+.figures__figure_type_triangle.animated {
+  animation: rotation 2s linear infinite;
+}
+
+.figures__figure_type_square.animated {
+  animation: pulse 1s linear 0s infinite alternate;
+}
+
+.figures__figure_type_rectangle {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0 50%);
+}
+.figures__figure_type_rectangle.animated {
+  animation: fly 2s linear 0s infinite;
+}

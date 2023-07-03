@@ -39,7 +39,6 @@
   height: 100%;
   position: relative;
   display: flex;
-  /* flex-wrap: nowrap; */
   left: 0;
   transition: ease 0.5s;
 }
