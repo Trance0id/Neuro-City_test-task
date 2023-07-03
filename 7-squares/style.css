@@ -1,0 +1,25 @@
+.page-heading {
+  text-align: center;
+}
+.button {
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+  background-color: teal;
+  user-select: none;
+}
+
+.squares {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+}
+
+.squares__square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
