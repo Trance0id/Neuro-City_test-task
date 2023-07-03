@@ -1,0 +1,16 @@
+.video {
+  margin: 0 auto;
+  width: 70%;
+  position: relative;
+}
+
+.video__window {
+  width: 100%;
+}
+
+.video__time {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  color: #fff;
+}
