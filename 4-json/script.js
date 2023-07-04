@@ -12,7 +12,7 @@ class Api {
       if (res.ok) {
         return res.json();
       } else {
-        return Promise.reject(`Ошибка! Статус: ${res.status}`);
+        return Promise.reject(`Ошибка в полученнии данных! Статус: ${res.status}`);
       }
     });
   }
