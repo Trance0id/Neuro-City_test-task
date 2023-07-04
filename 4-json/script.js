@@ -73,18 +73,3 @@ const nav = document.querySelector('.navigation');
 const personList = document.querySelector('.persons');
 
 renderButtons();
-
-// api.getData().then(res => {
-//   const numOfPages = res.total_pages;
-//   for (let i = 1; i <= numOfPages; i++) {
-//     const buttonElement = document.createElement('button');
-//     buttonElement.setAttribute('type', 'button');
-//     buttonElement.classList.add('navigation__button');
-//     buttonElement.textContent = String(i);
-//     buttonElement.addEventListener('click', () => {
-//       personList.innerHTML = '';
-//       getPageByNo(i);
-//     });
-//     nav.append(buttonElement);
-//   }
-// });
